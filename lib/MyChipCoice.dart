@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:sberbank_project/resources/TextStyles.dart';
 
 class MyChipChoice extends StatefulWidget {
    final String title;
@@ -27,20 +28,14 @@ class _MyChipChoiceState extends State<MyChipChoice> {
   @override
   Widget build(BuildContext context) {
     return ChoiceChip(
-      shape: StadiumBorder(),
+      shape: const StadiumBorder(),
       selectedColor: Colors.green,
       side: BorderSide.none,
       backgroundColor: const Color.fromRGBO(230, 230, 230, 1),
       showCheckmark: false,
       label: Text(
         text,
-        style: const TextStyle(
-          color: Colors.black,
-          fontSize: 14,
-          fontFamily: 'SF Pro Text',
-          fontWeight: FontWeight.w500,
-          letterSpacing: -0.41,
-        ),
+        style: TextStyleSelect.chipStyle
       ),
       selected: _isSelected,
       onSelected: (newBoolValue) {

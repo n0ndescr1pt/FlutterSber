@@ -23,6 +23,7 @@ class InfoTabs extends StatelessWidget {
             title,
             style: TextStyleSelect.boldTitle
           ),
+          const SizedBox(height: 8,),
           Text(
             subTitle,
             style: TextStyleSelect.subTitleGrey

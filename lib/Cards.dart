@@ -1,6 +1,7 @@
 
 
 import 'package:flutter/material.dart';
+import 'package:sberbank_project/resources/TextStyles.dart';
 
 // ignore: must_be_immutable
 class CardViews extends StatelessWidget {
@@ -59,14 +60,7 @@ class CardViews extends StatelessWidget {
                 const SizedBox(width: 12),
                 Text(
                   title,
-                  style: const TextStyle(
-                    color: Colors.black,
-                    fontSize: 16,
-                    fontFamily: 'SF Pro Text',
-                    fontWeight: FontWeight.w500,
-                    height: 0.08,
-                    letterSpacing: -0.40,
-                  ),
+                  style: TextStyleSelect.cardTitle
                 )
               ],
             ),

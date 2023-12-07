@@ -1,6 +1,7 @@
 // ignore: file_names
 import 'package:flutter/material.dart';
 import 'package:sberbank_project/resources/ImageSelect.dart';
+import 'package:sberbank_project/resources/TextStyles.dart';
 
 class MySliverAppBar extends StatelessWidget {
   const MySliverAppBar({super.key});
@@ -35,13 +36,7 @@ class MySliverAppBar extends StatelessWidget {
               padding: EdgeInsets.all(46.0),
               child: Text(
                 'Екатерина',
-                style: TextStyle(
-                  color: Colors.black,
-                  fontSize: 24,
-                  fontFamily: 'SF Pro Display',
-                  fontWeight: FontWeight.w700,
-                  height: 0.06,
-                ),
+                style: TextStyleSelect.nameText
               ),
             ),
           ],
