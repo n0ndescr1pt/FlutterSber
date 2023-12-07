@@ -1,7 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:sberbank_project/resources/TextStyles.dart';
 
+// ignore: must_be_immutable
 class InfoTabs extends StatelessWidget {
-  const InfoTabs({super.key});
+  String title;
+  String subTitle;
+
+  InfoTabs(this.title,this.subTitle,{super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -14,25 +19,13 @@ class InfoTabs extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          const Text(
-            'У вас подключено',
-            style: TextStyle(
-              color: Colors.black,
-              fontSize: 20,
-              fontFamily: 'SF Pro Text',
-              fontWeight: FontWeight.w700,
-              letterSpacing: -0.70,
-            ),
+          Text(
+            title,
+            style: TextStyleSelect.boldTitle
           ),
           Text(
-            'Подписки, автоплатежи и сервисы на которые вы подписались',
-            style: TextStyle(
-              color: Colors.black.withOpacity(0.550000011920929),
-              fontSize: 14,
-              fontFamily: 'SF Pro Text',
-              fontWeight: FontWeight.w500,
-              letterSpacing: -0.42,
-            ),
+            subTitle,
+            style: TextStyleSelect.subTitleGrey
           ),
         ],
       ),

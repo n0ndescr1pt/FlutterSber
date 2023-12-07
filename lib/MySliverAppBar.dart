@@ -1,4 +1,6 @@
+// ignore: file_names
 import 'package:flutter/material.dart';
+import 'package:sberbank_project/resources/ImageSelect.dart';
 
 class MySliverAppBar extends StatelessWidget {
   const MySliverAppBar({super.key});
@@ -22,7 +24,7 @@ class MySliverAppBar extends StatelessWidget {
                 image: const DecorationImage(
                   fit: BoxFit.fill,
                   alignment: Alignment.center,
-                  image: AssetImage('assets/images/woman.png'),
+                  image: ImageSelect.profilePhoto,
                 ),
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(38),

@@ -3,6 +3,7 @@ import 'package:sberbank_project/Cards.dart';
 import 'package:sberbank_project/MyChipCoice.dart';
 import 'package:sberbank_project/info_pads.dart';
 import 'package:sberbank_project/info_tabs.dart';
+import 'package:sberbank_project/resources/ImageSelect.dart';
 
 class FirstScreen extends StatelessWidget {
   const FirstScreen({super.key});
@@ -12,7 +13,7 @@ class FirstScreen extends StatelessWidget {
     return ListView(
       scrollDirection: Axis.vertical,
       children: [
-        const InfoTabs(),
+        InfoTabs("У вас подключено", "Подписки, автоплатежи и сервисы на которые вы подписались"),
         const SizedBox(height: 20),
         SingleChildScrollView(
           clipBehavior: Clip.none,
@@ -22,18 +23,18 @@ class FirstScreen extends StatelessWidget {
             child: Row(
               children: [
                 CardViews("СберПрайм", "Платеж 9 июля", "199 Р в месяц",
-                    "assets/icons/sber.png"),
+                  ImageSelect.sberImage),
                 CardViews("Переводы", "Автопродление 21 августа",
-                    "199 Р в месяц", "assets/icons/percent.png"),
+                    "199 Р в месяц", ImageSelect.percentImage),
               ],
             ),
           ),
         ),
         const SizedBox(height: 46),
-        const InfoTabs(),
+        InfoTabs("Тарифы и лимиты", "Для операций в Сбербанк Онлайн"),
         const SizedBox(height: 12),
         InfoPads("Изменить суточный лимит", "На платежи и переводы",
-            "assets/icons/speedometer.png"),
+            ImageSelect.speedometerIcon),
         const Divider(
           height: 1,
           thickness: 0,
@@ -42,7 +43,7 @@ class FirstScreen extends StatelessWidget {
           color: Colors.grey,
         ),
         InfoPads("Переводы без комиссии", "Показать остаток в этом месяце",
-            "assets/icons/percentSend.png"),
+            ImageSelect.percentSendIcon),
         const Divider(
           height: 1,
           thickness: 0,
@@ -51,9 +52,9 @@ class FirstScreen extends StatelessWidget {
           color: Colors.grey,
         ),
         InfoPads("Информация о тарифах\nи лимитах", "",
-            "assets/icons/arrows_forward_back.png"),
+            ImageSelect.arrowBackIcon),
         const SizedBox(height: 46),
-        const InfoTabs(),
+        InfoTabs("Интересы","Мы подбираем истории и предложения по темам, которые вам нравятся"),
         const SizedBox(height: 16),
         const Padding(
           padding: EdgeInsets.only(right: 16, left: 16),

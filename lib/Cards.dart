@@ -7,7 +7,7 @@ class CardViews extends StatelessWidget {
   String title;
   String description;
   String subDescription;
-  String icon;
+  AssetImage icon;
 
   CardViews(this.title, this.description, this.subDescription, this.icon,
       {super.key});
@@ -52,7 +52,7 @@ class CardViews extends StatelessWidget {
             child: Row(
               children: [
                 Image(
-                  image: AssetImage(icon),
+                  image: icon,
                   width: 36,
                   height: 36,
                 ),

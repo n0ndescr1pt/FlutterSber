@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 class InfoPads extends StatelessWidget {
   String title;
   String subTitle;
-  String icon;
+  AssetImage icon;
 
   InfoPads(this.title, this.subTitle, this.icon, {super.key});
 
@@ -22,7 +22,7 @@ class InfoPads extends StatelessWidget {
               const EdgeInsets.only(left: 16, right: 8, bottom: 12, top: 12),
           child: Row(
             children: [
-              Image(image: AssetImage(icon)),
+              Image(image: icon),
               const SizedBox(width: 12),
               Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
