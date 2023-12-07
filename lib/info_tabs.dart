@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
-class info_tabs extends StatelessWidget {
+class InfoTabs extends StatelessWidget {
+  const InfoTabs({super.key});
+
   @override
   Widget build(BuildContext context) {
     return tab();
@@ -8,7 +10,7 @@ class info_tabs extends StatelessWidget {
 
   Widget tab() {
     return Padding(
-      padding: const EdgeInsets.only(left: 16, right: 16, bottom: 20, top: 30),
+      padding: const EdgeInsets.only(left: 16, right: 16),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
