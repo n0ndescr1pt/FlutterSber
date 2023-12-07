@@ -31,13 +31,15 @@ class CardViews extends StatelessWidget {
         shadows: const [
           BoxShadow(
             color: Color(0x114F4F6C),
-            blurRadius: 10,
+            blurRadius: 12,
+            blurStyle: BlurStyle.normal,
             offset: Offset(0, 8),
             spreadRadius: 1,
           ),
           BoxShadow(
             color: Color(0x14000000),
             blurRadius: 8,
+            blurStyle: BlurStyle.normal,
             offset: Offset(0, 2),
             spreadRadius: 0,
           )
@@ -83,6 +85,7 @@ class CardViews extends StatelessWidget {
                     fontFamily: 'SF Pro Text',
                     fontWeight: FontWeight.w500,
                     letterSpacing: -0.41,
+                    
                   ),
                 ),
                 // ---
