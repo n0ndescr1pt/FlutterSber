@@ -1,6 +1,8 @@
 // ignore: file_names
 import 'package:flutter/material.dart';
+import 'package:sberbank_project/resources/ColorSelect.dart';
 import 'package:sberbank_project/resources/ImageSelect.dart';
+import 'package:sberbank_project/resources/TextSelect.dart';
 import 'package:sberbank_project/resources/TextStyles.dart';
 
 class MySliverAppBar extends StatelessWidget {
@@ -35,7 +37,7 @@ class MySliverAppBar extends StatelessWidget {
             const Padding(
               padding: EdgeInsets.all(46.0),
               child: Text(
-                'Екатерина',
+                TextSelect.username,
                 style: TextStyleSelect.nameText
               ),
             ),
@@ -47,7 +49,7 @@ class MySliverAppBar extends StatelessWidget {
           padding: const EdgeInsets.all(14),
           iconSize: 24,
           icon: const Icon(Icons.close),
-          color: Colors.green,
+          color: ColorSelect.greenColor,
           onPressed: () {},
         ),
         const Expanded(child: Text("")),
@@ -55,19 +57,19 @@ class MySliverAppBar extends StatelessWidget {
           iconSize: 24,
           padding: const EdgeInsets.all(14),
           icon: const Icon(Icons.exit_to_app),
-          color: Colors.green,
+          color: ColorSelect.greenColor,
           onPressed: () {},
         ),
       ],
       bottom: const PreferredSize(
         preferredSize: Size.fromRadius(70),
         child: TabBar(
-          indicatorColor: Colors.green,
+          indicatorColor: ColorSelect.greenColor,
           indicatorSize: TabBarIndicatorSize.tab,
-          labelColor: Colors.black,
+          labelColor: ColorSelect.blackColor,
           tabs: [
-            Tab(text: 'Профиль'),
-            Tab(text: 'Настройки'),
+            Tab(text: TextSelect.firstTab),
+            Tab(text: TextSelect.secondTab),
           ],
           
         ),

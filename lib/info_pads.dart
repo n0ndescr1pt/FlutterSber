@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:sberbank_project/resources/ColorSelect.dart';
 
 // ignore: must_be_immutable
 class InfoPads extends StatelessWidget {
@@ -30,7 +31,7 @@ class InfoPads extends StatelessWidget {
                   Text(
                     title,
                     style: const TextStyle(
-                      color: Colors.black,
+                      color: ColorSelect.blackColor,
                       fontSize: 16,
                       fontFamily: 'SF Pro Text',
                       fontWeight: FontWeight.w500,
@@ -41,7 +42,7 @@ class InfoPads extends StatelessWidget {
                   Text(
                     subTitle,
                     style: TextStyle(
-                      color: Colors.black.withOpacity(0.550000011920929),
+                      color: ColorSelect.blackWithOpacity50,
                       fontSize: subTitle != "" ? 14 : 0,
                       fontFamily: 'SF Pro Text',
                       fontWeight: FontWeight.w500,
