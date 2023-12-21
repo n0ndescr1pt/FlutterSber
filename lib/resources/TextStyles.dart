@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 
+
+
 class TextStyleSelect {
+
   static const TextStyle boldTitle = TextStyle(
     color: Colors.black,
     fontSize: 20,

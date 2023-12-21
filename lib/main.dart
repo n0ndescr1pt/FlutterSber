@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:sberbank_project/FirstScreen.dart';
 import 'package:sberbank_project/MySliverAppBar.dart';
+import 'package:sberbank_project/resources/theme.dart';
 
 void main() => runApp(const MaterialApp(
       home: SilverAppBarWithTabBarScreen(),
@@ -26,6 +27,7 @@ class _SilverAppBarWithTabBarState extends State<SilverAppBarWithTabBarScreen>
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      theme: basicTheme(),
       home: DefaultTabController(
         length: 2,
         child: Scaffold(

@@ -1,6 +1,7 @@
 
 
 import 'package:flutter/material.dart';
+import 'package:sberbank_project/resources/ColorSelect.dart';
 import 'package:sberbank_project/resources/TextStyles.dart';
 
 // ignore: must_be_immutable
@@ -25,20 +26,20 @@ class CardViews extends StatelessWidget {
       height: 130,
       clipBehavior: Clip.antiAlias,
       decoration: ShapeDecoration(
-        color: Colors.white,
+        color: ColorSelect.whiteColor,
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(12),
         ),
         shadows: const [
           BoxShadow(
-            color: Color(0x114F4F6C),
+            color: ColorSelect.shadowColor,
             blurRadius: 12,
             blurStyle: BlurStyle.normal,
             offset: Offset(0, 8),
             spreadRadius: 1,
           ),
           BoxShadow(
-            color: Color(0x14000000),
+            color: ColorSelect.shadowDarkColor,
             blurRadius: 8,
             blurStyle: BlurStyle.normal,
             offset: Offset(0, 2),
@@ -74,7 +75,7 @@ class CardViews extends StatelessWidget {
                 Text(
                   description,
                   style: const TextStyle(
-                    color: Colors.black,
+                    color: ColorSelect.blackColor,
                     fontSize: 14,
                     fontFamily: 'SF Pro Text',
                     fontWeight: FontWeight.w500,
@@ -86,7 +87,7 @@ class CardViews extends StatelessWidget {
                 Text(
                   subDescription,
                   style: TextStyle(
-                    color: Colors.black.withOpacity(0.550000011920929),
+                    color: ColorSelect.blackWithOpacity50,
                     fontSize: 14,
                     fontFamily: 'SF Pro Text',
                     fontWeight: FontWeight.w500,
